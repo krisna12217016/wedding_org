@@ -1,0 +1,23 @@
+CRITICAL - 2022-04-11 08:54:13 --> syntax error, unexpected variable "$routes"
+#0 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\xampp\htdocs\wedding_org\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\wedding_org\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2022-04-11 08:54:16 --> syntax error, unexpected variable "$routes"
+#0 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\xampp\htdocs\wedding_org\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2022-04-11 08:54:18 --> syntax error, unexpected variable "$routes"
+#0 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\xampp\htdocs\wedding_org\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\wedding_org\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2022-04-11 08:54:20 --> syntax error, unexpected variable "$routes"
+#0 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\xampp\htdocs\wedding_org\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\wedding_org\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#4 {main}
