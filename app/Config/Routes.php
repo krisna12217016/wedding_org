@@ -31,6 +31,13 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+$routes->get('create-db', function() {
+    $forge = \Config\Database::forge();
+    if ($forge->createDatabase('wedding')) {
+        echo 'Database created!';
+    }
+});
+
 // $routes->get('/', 'Home::index');
 $routes->addRedirect('/', 'home');
 $routes->get('gawe', 'Gawe::index');

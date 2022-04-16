@@ -1,0 +1,9 @@
+ERROR - 2022-04-16 02:12:59 --> Can't create database 'wedding'; database exists
+CRITICAL - 2022-04-16 02:12:59 --> Unable to create the specified database.
+#0 C:\xampp\htdocs\wedding_org\app\Config\Routes.php(36): CodeIgniter\Database\Forge->createDatabase('wedding')
+#1 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(788): CodeIgniter\CodeIgniter->Config\{closure}()
+#2 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#3 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\wedding_org\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\wedding_org\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
