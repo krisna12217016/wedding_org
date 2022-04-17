@@ -29,20 +29,29 @@
               <div class="card-header"><h4>Login</h4></div>
 
               <div class="card-body">
-                <form method="POST" action="#" class="needs-validation" novalidate="">
-                  <div class="form-group">
+              <?php if(session()->getFlashdata('error')) : ?> 
+                <div class="alert alert-danger alert-dismissible show fade">
+                <div class="alert-body">
+                    <button class="close" data-dismiss="alert">x</button>
+                    <b>Error !</b>
+                    <?=session()->getFlashdata('error')?>
+                </div>
+                </div>
+                <?php endif; ?>
+                <form method="POST" action="<?=site_url('auth/loginProcess')?>" class="needs-validation" novalidate="">
+                <?=csrf_field() ?>  
+                <div class="form-group">
                     <label for="email">Email</label>
                     <input id="email" type="email" class="form-control" name="email" tabindex="1" required autofocus>
                     <div class="invalid-feedback">
                       Please fill in your email
                     </div>
                   </div>
-
                   <div class="form-group">
                     <div class="d-block">
                     	<label for="password" class="control-label">Password</label>
                       <div class="float-right">
-                        <a href="auth-forgot-password.html" class="text-small">
+                        <a href="" class="text-small">
                           Forgot Password?
                         </a>
                       </div>

@@ -51,7 +51,7 @@ class Gawe extends BaseController
         unset($data['_method']);
 
         $this->db->table('gawe')->where(['id_gawe' => $id])->update($data);
-        return redirect()->to(site_url('gawe'))->with('success', 'Data Berhasil Disimpan');
+        return redirect()->to(site_url('gawe'))->with('success', 'Data Berhasil Diupdate');
     }
 
     public function destroy($id)
