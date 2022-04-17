@@ -502,3 +502,53 @@ CRITICAL - 2022-04-16 20:49:56 --> Unsupported operand types: string + int
 #7 C:\xampp\htdocs\wedding_org\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #8 C:\xampp\htdocs\wedding_org\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
 #9 {main}
+CRITICAL - 2022-04-16 23:05:03 --> Invalid file: gawe/edit.php
+#0 C:\xampp\htdocs\wedding_org\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gawe/edit.php')
+#1 C:\xampp\htdocs\wedding_org\system\Common.php(1089): CodeIgniter\View\View->render('gawe/edit', Array, true)
+#2 C:\xampp\htdocs\wedding_org\app\Controllers\Gawe.php(39): view('gawe/edit', Array)
+#3 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(832): App\Controllers\Gawe->edit('1')
+#4 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gawe))
+#5 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\wedding_org\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\wedding_org\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-04-16 23:34:53 --> Too few arguments to function App\Controllers\Gawe::update(), 0 passed in C:\xampp\htdocs\wedding_org\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(832): App\Controllers\Gawe->update()
+#1 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gawe))
+#2 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\wedding_org\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\wedding_org\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-04-16 23:35:04 --> Too few arguments to function App\Controllers\Gawe::update(), 0 passed in C:\xampp\htdocs\wedding_org\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(832): App\Controllers\Gawe->update()
+#1 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gawe))
+#2 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\wedding_org\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\wedding_org\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-04-16 23:35:59 --> Too few arguments to function App\Controllers\Gawe::update(), 0 passed in C:\xampp\htdocs\wedding_org\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(832): App\Controllers\Gawe->update()
+#1 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gawe))
+#2 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\wedding_org\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\wedding_org\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-04-16 23:36:01 --> Too few arguments to function App\Controllers\Gawe::update(), 0 passed in C:\xampp\htdocs\wedding_org\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(832): App\Controllers\Gawe->update()
+#1 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gawe))
+#2 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\wedding_org\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\wedding_org\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-04-16 23:39:37 --> Undefined variable $info_gawe
+#0 C:\xampp\htdocs\wedding_org\app\Views\Gawe\edit.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 32)
+#1 C:\xampp\htdocs\wedding_org\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wedding_org\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\wedding_org\system\Common.php(1089): CodeIgniter\View\View->render('gawe/edit', Array, true)
+#4 C:\xampp\htdocs\wedding_org\app\Controllers\Gawe.php(39): view('gawe/edit', Array)
+#5 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(832): App\Controllers\Gawe->edit('7')
+#6 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gawe))
+#7 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\wedding_org\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\wedding_org\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
