@@ -44,7 +44,7 @@ class Gawe extends BaseController
             throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
         }
     }
-    
+
     public function update($id)
     {
         $data = $this->request->getPost();
@@ -52,5 +52,11 @@ class Gawe extends BaseController
 
         $this->db->table('gawe')->where(['id_gawe' => $id])->update($data);
         return redirect()->to(site_url('gawe'))->with('success', 'Data Berhasil Disimpan');
+    }
+
+    public function destroy($id)
+    {
+        $this->db->table('gawe')->where(['id_gawe' => $id])->delete();
+        return redirect()->to(site_url('gawe'))->with('success', 'Data Berhasil Dihapus');
     }
 }
