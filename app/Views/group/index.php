@@ -43,6 +43,23 @@
                           <th>Info</th>
                           <th>Action</th>
                         </tr>
+                        <?php foreach ($groups as $key => $value) : ?>
+                        <tr>
+                          <td><?=$key + 1?></td>
+                          <td><?=$value->name_group?></td>
+                          <td><?=$value->info_group?></td>
+                          <td class="text-center" style="width: 15%">
+                            <a href="<?=site_url('group/edit/' . $value->id_group)?>" class="btn btn-warning btn-sm"><i class="fas fa-pencil-alt"></i></a>
+                            <form action="<?=site_url('group/' . $value->id_group)?>" method="post" class="d-inline" onsubmit="return confirm('Yakin Hapus Data?')">
+                            <?=csrf_field() ?>
+                            <input type="hidden" name="_method" value="DELETE">
+                            <button class="btn btn-warning btn-sm">
+                              <i class="fas fa-trash"></i>
+                            </button>
+                            </form>
+                          </td>
+                        </tr>
+                        <?php endforeach; ?>
                       </tbody></table>
                     </div>
                     </div>
