@@ -180,3 +180,22 @@ CRITICAL - 2022-05-21 21:14:50 --> Undefined property: App\Controllers\Groups::$
 #4 C:\xampp\htdocs\wedding_org\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 C:\xampp\htdocs\wedding_org\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
 #6 {main}
+CRITICAL - 2022-05-21 21:23:57 --> Undefined property: App\Controllers\Groups::$group
+#0 C:\xampp\htdocs\wedding_org\app\Controllers\Groups.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 21)
+#1 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(832): App\Controllers\Groups->index()
+#2 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#3 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\wedding_org\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\wedding_org\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-21 21:37:33 --> Allowed fields must be specified for model: App\Models\GroupModel
+#0 C:\xampp\htdocs\wedding_org\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Grou...')
+#1 C:\xampp\htdocs\wedding_org\system\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\xampp\htdocs\wedding_org\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\xampp\htdocs\wedding_org\app\Controllers\Groups.php(56): CodeIgniter\Model->insert(Array)
+#4 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(832): App\Controllers\Groups->create()
+#5 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#6 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\wedding_org\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\wedding_org\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
