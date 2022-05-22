@@ -1,0 +1,27 @@
+CRITICAL - 2022-05-21 20:20:54 --> Undefined variable $groups
+#0 C:\xampp\htdocs\wedding_org\app\Views\group\index.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 47)
+#1 C:\xampp\htdocs\wedding_org\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wedding_org\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\wedding_org\system\Common.php(1089): CodeIgniter\View\View->render('group/index', Array, true)
+#4 C:\xampp\htdocs\wedding_org\app\Controllers\Groups.php(16): view('group/index')
+#5 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(832): App\Controllers\Groups->index()
+#6 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#7 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\wedding_org\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\wedding_org\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-21 20:24:52 --> syntax error, unexpected double-quoted string ">Group Kontak</a></li>", expecting "," or ";"
+#0 C:\xampp\htdocs\wedding_org\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\wedding_org\system\View\View.php(424): CodeIgniter\View\View->render('layout/menu', NULL, true)
+#2 C:\xampp\htdocs\wedding_org\app\Views\layout\default.php(250): CodeIgniter\View\View->include('layout/menu')
+#3 C:\xampp\htdocs\wedding_org\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wedding_org\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\htdocs\wedding_org\system\View\View.php(226): CodeIgniter\View\View->render('layout/default', Array, true)
+#6 C:\xampp\htdocs\wedding_org\system\Common.php(1089): CodeIgniter\View\View->render('group/index', Array, true)
+#7 C:\xampp\htdocs\wedding_org\app\Controllers\Groups.php(16): view('group/index')
+#8 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(832): App\Controllers\Groups->index()
+#9 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#10 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\wedding_org\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\wedding_org\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
