@@ -16,6 +16,7 @@ namespace CodeIgniter\RESTful;
  */
 class ResourcePresenter extends BaseResource
 {
+    protected $helpers = ['custom'];
     /**
      * Present a view of resource objects
      *
