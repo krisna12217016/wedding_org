@@ -67,6 +67,7 @@ class CreateContacts extends Migration
 
     public function down()
     {
+        $this->forge->dropForeignKey('contacts', 'contacts_id_group_foreign');
         $this->forge->dropTable('contacts');
     }
 }

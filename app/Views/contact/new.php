@@ -18,12 +18,37 @@
         <div class="card-body col-md-6">
             <form action="<?=site_url('contacts')?>" method="post" autocomplete="off">
             <?=csrf_field() ?>
+            <div class="form-group">
+                <label>Group *</label>
+                <select name="id_group" class="form-control" required>
+                    <option value="" hidden></option>
+                    <?php foreach ($groups as $key => $value) : ?>
+                        <option value="<?=$value->id_group?>"><?=$value->name_group?></option>
+                    <?php endforeach; ?>
+                </select>
+            </div>
                 <div class="form-group">
                     <label>Nama Kontak *</label>
-                    <input type="text" name="name_contact" class="form-control" required autofocus>
+                    <input type="text" name="name_contact" class="form-control" required>
                 </div>
                 <div class="form-group">
-                    <label>Info</label>
+                    <label>Nama Alias</label>
+                    <input type="text" name="name_alias" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Telepon</label>
+                    <input type="number" name="phone" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Alamat</label>
+                    <textarea name="address" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Info (Kota / Instansi / dll</label>
                     <textarea name="info_contact" class="form-control"></textarea>
                 </div>
                 <div>
