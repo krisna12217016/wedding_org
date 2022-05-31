@@ -94,6 +94,7 @@ class Contacts extends ResourceController
      */
     public function delete($id = null)
     {
-        //
+        $this->contact->delete($id);
+        return redirect()->to(site_url('contacts'))->with('success', 'Data Berhasil Dihapus');
     }
 }
