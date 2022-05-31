@@ -13,6 +13,21 @@ class ContactModel extends Model
     protected $useTimestamps    = true;
     protected $useSoftDeletes   = false;
 
+    protected $validationRules    = [
+        'id_group'          => 'required',
+        'name_contact'      => 'required|min_length[3]',
+    ];
+    protected $validationMessages = [
+        'id_group'          => [
+            'required'      => 'Group Belum Dipilih !',
+        ],
+        'name_contact'      => [
+            'required'      => 'Nama Kontak Tidak Boleh Kosong !',
+            'min_length'    => 'Masukan Minimal 3 Huruf !',
+        ],
+    ];
+    protected $skipValidation   = false;
+
     function getAll() {
         $builder = $this->db->table('contacts');
         $builder->join('groups', 'groups.id_group = contacts.id_group');

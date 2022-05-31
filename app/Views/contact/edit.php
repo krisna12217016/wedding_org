@@ -16,24 +16,31 @@
           <h4> Edit Kontak </h4>
         </div>
         <div class="card-body col-md-6">
+        <?php $errors = session()->getFlashdata('errors')?>
             <form action="<?=site_url('contacts/'.$contact->id_contact)?>" method="post" autocomplete="off">
             <?=csrf_field() ?>
             <input type="hidden" name="_method" value="PATCH">
             <div class="form-group">
                 <label>Group *</label>
-                <select name="id_group" class="form-control" required>
+                <select name="id_group" class="form-control <?=isset($errors['id_group']) ? 'is-invalid' : null?>">
                     <option value="" hidden>
                     </option>
                     <?php foreach ($groups as $key => $value) : ?>
-                        <option value="<?=$value->id_group?>" <?=$contact->id_group == $value->id_group ? 'selected' : null?>>
+                        <option value="<?=$value->id_group?>" <?=old('id_group' , $contact->id_group) == $value->id_group ? 'selected' : null?>>
                         <?=$value->name_group?>
                     </option>
                     <?php endforeach; ?>
                 </select>
+                <div class="invalid-feedback">
+                        <?=isset($errors['id_group']) ? $errors['id_group'] : null?>
+                    </div>
             </div>
                 <div class="form-group">
                     <label>Nama Kontak *</label>
-                    <input type="text" name="name_contact" value="<?=$contact->name_contact?>" class="form-control" required>
+                    <input type="text" name="name_contact" value="<?=old('name_contact', $contact->name_contact)?>" class="form-control <?=isset($errors['name_contact']) ? 'is-invalid' : null?>">
+                    <div class="invalid-feedback">
+                        <?=isset($errors['name_contact']) ? $errors['name_contact'] : null?>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label>Nama Alias</label>

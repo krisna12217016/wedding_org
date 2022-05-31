@@ -21,6 +21,24 @@ class Gawe extends BaseController
 
     public function store()
     {
+        $validate = $this->validate([
+            'name_gawe' => [
+                'rules' => 'required|min_length[3]',
+                'errors' => [
+                    'required' => 'Nama Gawe Tidak Boleh Kosong !',
+                    'min_length' => 'Masukan Minimal 3 Huruf !',
+                ],
+            ],
+            'date_gawe' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Tanggal Gawe Tidak Boleh Kosong !',
+                ],
+            ],
+        ]);
+        if(!$validate) {
+            return redirect()->back()->withInput();
+        }
         $data = $this->request->getPost();
 
         $this->db->table('gawe')->insert($data);
@@ -47,6 +65,24 @@ class Gawe extends BaseController
 
     public function update($id)
     {
+        $validate = $this->validate([
+            'name_gawe' => [
+                'rules' => 'required|min_length[3]',
+                'errors' => [
+                    'required' => 'Nama Gawe Tidak Boleh Kosong !',
+                    'min_length' => 'Masukan Minimal 3 Huruf !',
+                ],
+            ],
+            'date_gawe' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Tanggal Gawe Tidak Boleh Kosong !',
+                ],
+            ],
+        ]);
+        if(!$validate) {
+            return redirect()->back()->withInput();
+        }
         $data = $this->request->getPost();
         unset($data['_method']);
 

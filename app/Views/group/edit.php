@@ -16,11 +16,15 @@
           <h4> Edit Group Kontak </h4>
         </div>
         <div class="card-body col-md-6">
+        <?php $validation = \Config\Services::validation(); ?>
             <form action="<?=site_url('groups/update/'.$group->id_group)?>" method="post" autocomplete="off">
             <?=csrf_field() ?>
                 <div class="form-group">
                     <label>Nama group Kontak *</label>
-                    <input type="text" name="name_group" value="<?=$group->name_group?>" class="form-control" required>
+                    <input type="text" name="name_group" value="<?=old('name_group' , $group->name_group)?>" class="form-control <?=$validation->hasError('name_group') ? 'is-invalid' : null?>">
+                    <div class="invalid-feedback">
+                        <?=$validation->getError('name_group')?>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label>Info</label>

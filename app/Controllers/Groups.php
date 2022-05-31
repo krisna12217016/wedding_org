@@ -52,6 +52,18 @@ class Groups extends ResourcePresenter
      */
     public function create()
     {
+        $validate = $this->validate([
+            'name_group' => [
+                'rules' => 'required|min_length[3]',
+                'errors' => [
+                    'required' => 'Nama Group Tidak Boleh Kosong !',
+                    'min_length' => 'Masukan Minimal 3 Huruf !',
+                ],
+            ],
+        ]);
+        if(!$validate) {
+            return redirect()->back()->withInput();
+        }
         $data = $this->request->getPost();
         $this->model->insert($data);
         return redirect()->to(site_url('groups'))->with('success', 'Data Berhasil Disimpan');
@@ -85,6 +97,18 @@ class Groups extends ResourcePresenter
      */
     public function update($id = null)
     {
+        $validate = $this->validate([
+            'name_group' => [
+                'rules' => 'required|min_length[3]',
+                'errors' => [
+                    'required' => 'Nama Group Tidak Boleh Kosong !',
+                    'min_length' => 'Masukan Minimal 3 Huruf !',
+                ],
+            ],
+        ]);
+        if(!$validate) {
+            return redirect()->back()->withInput();
+        }
         $data = $this->request->getPost();
         $this->model->update($id, $data);
         return redirect()->to(site_url('groups'))->with('success', 'Data Berhasil Update');
