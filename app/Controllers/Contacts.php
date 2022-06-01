@@ -21,7 +21,9 @@ class Contacts extends ResourceController
      */
     public function index()
     {
-        $data = $this->contact->getPaginated(5);
+        $keyword = $this->request->getGet('keyword');
+        $data = $this->contact->getPaginated(5, $keyword);
+        // $data['keyword'] = $keyword;
         return view('contact/index', $data);
     }
 

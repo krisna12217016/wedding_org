@@ -33,11 +33,18 @@
 <div class="card">
 <div class="card-header">
   <h4> Data Kontak Saya </h4>
-  <!-- <div class="card-header-action">
-    <a href="<?=site_url('contacts/trash')?>" class="btn btn-danger"><i class="fa fa-trash"></i> Trash</a>
-  </div> -->
 </div>
-
+<div class="card-header">
+  <form action="" method="get" autocomplete="off">
+    <div class="float-left">
+      <?php $request = \Config\Services::request(); ?>
+      <input type="text" name="keyword" value="<?=$request->getGet('keyword')?>" class="form-control" style="width:115pt;" placeholder="Keyword Pencarian">
+    </div>
+    <div class="float-right ml-2">
+      <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
+    </div>
+  </form>
+</div>
 <div class="card-body table-responsive">
       <table class="table table-striped table-md">
         <thead>
@@ -81,7 +88,12 @@
         <?php endforeach; ?>
     </tbody>
     </table>
+    <div class="float-leaft">
+      <i>Showing <?=1 + (5 * ($page - 1))?> to <?=$no-1?> of <?=$pager->getTotal()?> entries</i>
+    </div>
+    <div class="float-right">
     <?= $pager->links('default', 'pagination') ?>
+    </div>
     </div>
     </div>
 </div>
