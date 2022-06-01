@@ -39,7 +39,7 @@
 </div>
 
 <div class="card-body table-responsive">
-      <table class="table table-striped table-md" id="table1">
+      <table class="table table-striped table-md">
         <thead>
           <tr>
           <th>#</th>
@@ -54,9 +54,12 @@
         </tr>
     </thead>
     <tbody>
-    <?php foreach ($contacts as $key => $value) : ?>
+    <?php 
+    $page = isset($_GET['page']) ? $_GET['page'] : 1;
+    $no = 1 + (5 * ($page - 1));
+    foreach ($contacts as $key => $value) : ?>
         <tr>
-          <td><?=$key + 1?></td>
+          <td><?=$no++?></td>
           <td><?=$value->name_contact?></td>
           <td><?=$value->name_alias?></td>
           <td><?=$value->phone?></td>
@@ -78,9 +81,9 @@
         <?php endforeach; ?>
     </tbody>
     </table>
+    <?= $pager->links('default', 'pagination') ?>
     </div>
     </div>
-
 </div>
 </section>
 <?= $this->endSection() ?>
