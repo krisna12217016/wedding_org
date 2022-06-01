@@ -39,7 +39,7 @@
 </div>
 
 <div class="card-body table-responsive">
-      <table class="table table-striped table-md">
+      <table class="table table-striped table-md" id="table1">
         <thead>
           <tr>
           <th>#</th>
@@ -66,10 +66,10 @@
           <td><?=$value->name_group?></td>
           <td class="text-center" style="width: 15%">
             <a href="<?=site_url('contacts/' . $value->id_contact.'/edit')?>" class="btn btn-warning btn-sm"><i class="fas fa-pencil-alt"></i></a>
-            <form action="<?=site_url('contacts/' . $value->id_contact)?>" method="post" class="d-inline" onsubmit="return confirm('Yakin Hapus Data?')">
+            <form action="<?=site_url('contacts/' . $value->id_contact)?>" method="post" class="d-inline" id="del-<?=$value->id_contact?>">
             <?=csrf_field() ?>
             <input type="hidden" name="_method" value="DELETE">
-            <button class="btn btn-danger btn-sm">
+            <button class="btn btn-danger btn-sm" data-confirm="Hapus Data?|Apakah Anda Yakin?" data-confirm-yes="submitDel(<?=$value->id_contact?>)">
               <i class="fas fa-trash"></i>
             </button>
             </form>
