@@ -163,3 +163,51 @@ CRITICAL - 2022-06-01 12:30:30 --> Undefined property: stdClass::$name_group
 #4 C:\xampp\htdocs\wedding_org\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 C:\xampp\htdocs\wedding_org\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
 #6 {main}
+CRITICAL - 2022-06-01 14:02:12 --> Undefined variable $undangan
+#0 C:\xampp\htdocs\wedding_org\app\Views\invitation\index.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 80)
+#1 C:\xampp\htdocs\wedding_org\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wedding_org\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\wedding_org\system\Common.php(1089): CodeIgniter\View\View->render('invitation/inde...', Array, true)
+#4 C:\xampp\htdocs\wedding_org\app\Controllers\Undangan.php(11): view('invitation/inde...')
+#5 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(832): App\Controllers\Undangan->index()
+#6 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Undangan))
+#7 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\wedding_org\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\wedding_org\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-06-01 14:02:26 --> Undefined variable $undangan
+#0 C:\xampp\htdocs\wedding_org\app\Views\invitation\index.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 80)
+#1 C:\xampp\htdocs\wedding_org\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wedding_org\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\wedding_org\system\Common.php(1089): CodeIgniter\View\View->render('invitation/inde...', Array, true)
+#4 C:\xampp\htdocs\wedding_org\app\Controllers\Undangan.php(11): view('invitation/inde...')
+#5 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(832): App\Controllers\Undangan->index()
+#6 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Undangan))
+#7 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\wedding_org\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\wedding_org\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-06-01 14:06:53 --> Undefined variable $page
+#0 C:\xampp\htdocs\wedding_org\app\Views\invitation\index.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 80)
+#1 C:\xampp\htdocs\wedding_org\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wedding_org\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\wedding_org\system\Common.php(1089): CodeIgniter\View\View->render('invitation/inde...', Array, true)
+#4 C:\xampp\htdocs\wedding_org\app\Controllers\Undangan.php(11): view('invitation/inde...')
+#5 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(832): App\Controllers\Undangan->index()
+#6 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Undangan))
+#7 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\wedding_org\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\wedding_org\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-06-01 14:07:12 --> Undefined variable $pager
+#0 C:\xampp\htdocs\wedding_org\app\Views\invitation\index.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 82)
+#1 C:\xampp\htdocs\wedding_org\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wedding_org\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\wedding_org\system\Common.php(1089): CodeIgniter\View\View->render('invitation/inde...', Array, true)
+#4 C:\xampp\htdocs\wedding_org\app\Controllers\Undangan.php(11): view('invitation/inde...')
+#5 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(832): App\Controllers\Undangan->index()
+#6 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Undangan))
+#7 C:\xampp\htdocs\wedding_org\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\wedding_org\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\wedding_org\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}

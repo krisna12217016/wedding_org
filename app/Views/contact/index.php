@@ -62,7 +62,7 @@
       <table class="table table-striped table-md">
         <thead>
           <tr>
-          <th>#</th>
+          <th>No</th>
           <th>Nama Kontak</th>
           <th>Alias</th>
           <th>Telepon</th>

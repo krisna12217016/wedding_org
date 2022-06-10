@@ -77,11 +77,11 @@
                 </form>
               </div>
             </div>
-            <div class="mt-5 text-muted text-center">
+            <!-- <div class="mt-5 text-muted text-center">
               Don't have an account? <a href="auth-register.html">Create One</a>
-            </div>
+            </div> -->
             <div class="simple-footer">
-              Copyright &copy; YukCoding 2022
+              Develop By; Krisna Heru Saputra
             </div>
           </div>
         </div>

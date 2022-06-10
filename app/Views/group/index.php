@@ -42,7 +42,7 @@
       <table class="table table-striped table-md" id="table1">
         <thead>
           <tr>
-          <th>#</th>
+          <th>No</th>
           <th>Nama Group</th>
           <th>Info</th>
           <th>Action</th>

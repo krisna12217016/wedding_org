@@ -24,7 +24,7 @@ class UserSeeder extends Seeder
                 'password_user' => password_hash('12345', PASSWORD_BCRYPT),
                 ],
                 [
-                'name_user' => 'Administrator2',
+                'name_user' => 'Krisna Heru Saputra',
                 'email_user' => 'adm2@bsi.ac.id',
                 'password_user' => password_hash('admin2', PASSWORD_BCRYPT),
                 ],

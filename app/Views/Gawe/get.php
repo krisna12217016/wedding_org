@@ -43,7 +43,7 @@
       <table class="table table-striped table-md" id="table1">
         <thead>
           <tr>
-          <th>#</th>
+          <th>No</th>
           <th>Nama Gawe</th>
           <th>Tanggal Gawe</th>
           <th>Info</th>
