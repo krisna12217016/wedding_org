@@ -11,7 +11,7 @@
               <!-- <li class="nav-item dropdown">
                 <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="far fa-envelope"></i> <span>Undangan</span></a>
                 <ul class="dropdown-menu">
-                  <li><a class="nav-link" href="">Saya Mengundang</a></li>
+                  <li><a class="nav-link" href="<?=site_url('Undangan')?>">Saya Mengundang</a></li>
                   <li><a class="nav-link" href="">Saya Diundang</a></li>
                 </ul>
               </li> -->

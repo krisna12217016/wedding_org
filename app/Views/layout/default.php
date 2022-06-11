@@ -240,7 +240,7 @@
       <div class="main-sidebar">
         <aside id="sidebar-wrapper">
           <div class="sidebar-brand">
-            <a href="<?=site_url()?>">yukNikah</a>
+            <a href="<?=site_url()?>">Event Management</a>
           </div>
           <div class="sidebar-brand sidebar-brand-sm">
             <a href="<?=site_url()?>">yN</a>
@@ -274,9 +274,9 @@
 
   <!-- General JS Scripts -->
   <script src="<?=base_url()?>/template/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="<?=base_url()?>/template/node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="<?=base_url()?>/template/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>      
   <script src="<?=base_url()?>/template/node_modules/jquery.nicescroll/dist/jquery.nicescroll.min.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
   <script src="<?=base_url()?>/template/node_modules/datatables/media/js/jquery.dataTables.min.js"></script>
   <script src="<?=base_url()?>/template/node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
 

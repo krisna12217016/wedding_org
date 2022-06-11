@@ -39,7 +39,7 @@
                 </div>
                 <div>
                     <button type="bubmit" class="btn btn-success"><i class="fas fa-paper-plane"></i>Save</button>
-                    <button type="reset" class="btn btn-secondary">Reset</button>
+                    <!-- <button type="reset" class="btn btn-secondary">Reset</button> -->
                 </div>
             </form>
         </div>
