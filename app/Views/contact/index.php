@@ -56,7 +56,8 @@
         <i class="fas fa-file-download"></i> Export Excel
       </a>
           <div class="dropdown d-inline">
-            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" 
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-file-upload"></i> Import Excel
             </button>
             <div class="dropdown-menu">
@@ -146,7 +147,7 @@
         </div>
         <div class="modal-footer bg-whitesmoke br">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-          <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+          <button type="submit" class="btn btn-primary">Submit</button>
         </div>
         </form>
       </div>
